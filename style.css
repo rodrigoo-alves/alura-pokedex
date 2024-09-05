@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url('./assets/poke-back.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: blur(2.5px); */
+  color: #fff;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.container {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-wrapper {
+  background-color: transparent;
+  filter: none;
+  padding: 1rem;
+  width: 640px;
+  height: 300px;
+  margin: 1rem;
+  margin-top: auto;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.header {
+  padding: 1rem;
+  text-align: center;
+} 
+
+.poke-logo {
+  height: 100px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-text {
+  border-radius: 1.5rem;
+  background-color: #f0ead2;
+  border: none;
+  font-size: 1rem;
+  padding: 0.8rem;
+  margin: 1rem;
+  width: 30rem; 
+}
+
+.input-text:focus {
+  outline: none;
+}
+
+.search-btn {
+  border-radius: 1.5rem;
+  border: none;
+  background-color: #f0ead2;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.8rem;
+  margin: 1rem;
+  width: 150px;
+}
+
+.search-btn:hover {
+  background-color: #bf0603;
+  transition: 0.3s ease-out;
+  color: #fff;
+}
+
+.footer {
+  background-color: #8d0801;
+  padding: 1rem;
+  margin-top: auto;
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+
+.text-rights {
+  font-size: 18px;
+  color: #fff;
+}
+
+.text-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.social-link {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 50px;
+}
+
+.fa-linkedin {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+} 
+
+.fa-square-github {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.6rem;
+  /* overflow-y: auto; */
+  height: 30vh;
+  width: 40rem;
+  padding: 1rem;
+  margin-top: 1rem;
+} 
+
+.card-section {
+  display: flex;
+  margin: 1rem;
+  padding: 1.5rem;
+  width: 35rem;
+  height: 20rem;
+  background-color: transparent;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.card-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+.type-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.type {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-image {
+  width: 150px;
+  height: 150px;
+  margin-right: 40px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.link-title {
+  color: rgb(161, 163, 26);
+  text-decoration: none;
+  border-bottom: 3px solid rgb(161, 163, 26);
+  margin-bottom: 1em;
+  
+}
+
+.link-title:hover {
+  color: rgb(229, 233, 13);
+  border-bottom: 3px solid rgb(229, 233, 13);
+  transition: 0.3s ease-out;
+}
