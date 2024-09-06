@@ -1,4 +1,4 @@
-** Search Your Favorite Pokémon with Ease!**
+** Search Your Favorite Pokémon with Ease! - Imersao Dev com Google Gemini **
 
 This JavaScript application brings the thrill of the Pokémon world right to your fingertips! Want to quickly find information about a specific Pokémon? Look no further!
 
