@@ -1,6 +1,6 @@
-const section = document.querySelector('.card');
-const input = document.querySelector('.input-text');
-const button = document.querySelector('.button-search');
+const section = document.querySelector('.card'); //seleciona a div com a classe card
+const input = document.querySelector('.input-text'); //seleciona o input
+const button = document.querySelector('.button-search'); //seleciona o botão
 
 function search() {
   // toLowerCase() - transforma a string em letras minúsculas
@@ -8,6 +8,10 @@ function search() {
 
   //funçao find() retorna o primeiro elemento que satisfaça a condição
   const result = pokeDb.find((pokemon)  => pokemon.name.toLocaleLowerCase() === searchvalue)
+  
+  if(searchvalue == '') {
+    return alert('Digite o nome de um pokemon');
+  }
 
   //se o resultado for verdadeiro, ele exibe o html, se não, exibe a mensagem de pokemon não encontrado
   if(result) {
@@ -25,22 +29,18 @@ function search() {
         </div>`;
     section.innerHTML = html;
   } else {
-    section.innerHTML = 'Pokemon não encontrado'
+    section.innerHTML = `
+        <div class="card-section">
+          <img src="./assets/missing-pokemon.png" alt="Missing Pokemon" class="card-image">
+          <div class="card-title-wrapper">
+            <a href="#" class="link-title">
+              <h2 class="card-title">Pokemon não encontrado</h2>
+            </a>
+            <p class="type-text"><span class="type"> Tipo: </span> Não Existe </p>
+            <p class="type-text"><span class="type"> Habilidade: </span> Não Existe </p>
+            <p class="type-text"><span class="type"> Habilidade Escondida: </span> Não Existe </p>
+          </div>
+        </div>`;
   }
   
 }
-
-
-// for(let data of pokeDb) {
-  //   section.innerHTML += `
-  //       <div class="card-section">
-  //         <img src=${data.image} alt="Bulbasaur" class="card-image">
-  //         <div class="card-title-wrapper">
-  //           <a href=${data.link} target="_blank" class="link-title">
-  //             <h2 class="card-title">${data.name}</h2>
-  //           </a>
-  //           <p class="type-text"><span class="type"> Tipo: </span> ${data.type} </p>
-  //         </div>
-  //       </div>`;
-  // }
-  
